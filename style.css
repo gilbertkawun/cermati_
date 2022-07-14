@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Lato:wght@300&family=Open+Sans:wght@300&display=swap");
+
+body {
+  margin: 0 auto;
+}
+
+.notification-content {
+  position: sticky;
+  padding: 9px;
+  box-sizing: border-box;
+  top: 0;
+  display: flex;
+  flex-wrap: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: ​rgb(229, 229, 229);
+  width: 100%;
+  min-height: 42px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.notification-text {
+  max-width: 720px;
+  width: 100%;
+}
+
+#notification-button {
+  display: block;
+  background-color: rgb(0, 123, 193);
+  border: none;
+  border-radius: 2px;
+  color: white;
+  padding: 6px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+}
+
+.header {
+  background-image: url(./assets/work-desk__dustin-lee.jpg);
+  min-height: 450px;
+  opacity: 1;
+  position: relative;
+}
+
+.layer {
+  background-color: rgba(0, 74, 117, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  padding: 12px;
+  display: flex;
+  align-items: flex-start;
+  width: 50px;
+}
+
+.panel-img {
+  width: 25px;
+  padding: 15px;
+}
+
+.hero-shot {
+  color: whitesmoke;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+}
+
+.title {
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+}
+
+.sub-title {
+  font-size: 1.8rem;
+  font-family: "Didact Gothic", sans-serif;
+}
+
+.pitch {
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+}
+
+.pitch2 {
+  font-family: "Lato", sans-serif;
+}
+
+.contact {
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px groove white;
+  border-radius: 2.5px;
+  font-family: "Lato", sans-serif;
+}
+
+.contact:hover {
+  background-color: white;
+  color: rgb(0, 74, 117);
+  border: transparent;
+}
+
+.highlights-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-top: 35px;
+  background-color: rgb(229, 229, 229);
+}
+
+.highlights-text {
+  box-sizing: border-box;
+  justify-items: center;
+  text-align: center;
+  width: 40%;
+  font-family: "Didact Gothic", sans-serif;
+}
+
+.highlights-info {
+  font-size: 13px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.highlights-title-flex {
+  font-weight: bold;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
+  padding: 15px;
+  padding-top: 30px;
+}
+
+.flex-item {
+  width: 30%;
+  height: 180px;
+  margin: 10px;
+  border: 0.2px ridge grey;
+  background-color: rgb(229, 229, 229);
+  font-family: "Lato", sans-serif;
+}
+
+.flex-item-row {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (max-width: 960px) {
+  .notification-content {
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .flex-item {
+    width: 45%;
+  }
+  .highlights-text {
+    width: 70%;
+  }
+}
+
+@media (max-width: 756px) {
+  .flex-item {
+    height: 200px;
+  }
+}
+
+@media (max-width: 633px) {
+  .flex-item {
+    height: 230px;
+  }
+  .logo {
+    width: 30px;
+  }
+}
+
+@media (max-width: 540px) {
+  .flex-item {
+    width: 90%;
+    height: 160px;
+  }
+  .panel-text {
+    width: 85%;
+  }
+}
+
+.newsletter-panel {
+  position: fixed;
+  /* max-height: 40%; */
+  max-width: 640px;
+  bottom: 0;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  background: rgb(0, 123, 193);
+  opacity: 0.83;
+  color: white;
+  font-family: "Lato", sans-serif;
+}
+
+.upper-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-right: 0.5%;
+}
+
+.x {
+  color: white;
+  text-decoration: none;
+  width: 12px;
+  cursor: pointer;
+}
+
+.newsletter-text {
+  padding-left: 6px;
+}
+
+.newsletter-email-form {
+  position: relative;
+  display: flex;
+  flex-wrap: flex;
+  flex-direction: row;
+  padding-bottom: 4px;
+}
+
+.input-email {
+  width: 70%;
+  border: transparent;
+  box-sizing: border-box;
+  padding: 8px;
+  margin: 3px;
+}
+
+.submit-email {
+  background-color: rgb(204, 102, 0);
+  color: white;
+  width: 30%;
+  border: transparent;
+  cursor: pointer;
+  box-sizing: border-box;
+  padding: 8px;
+  margin: 3px;
+}
+
+@media (max-width: 560px) {
+  .newsletter-email-form {
+    flex-direction: column;
+  }
+  .input-email {
+    width: 100%;
+  }
+  .submit-email {
+    width: 100%;
+  }
+}
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 12px;
+  background-color: rgb(0, 74, 117);
+  color: rgb(229, 229, 229);
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
